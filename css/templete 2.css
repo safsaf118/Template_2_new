@@ -1,0 +1,202 @@
+/* dividing webside
+
+    1.header section
+    2.image section
+    3. about section
+    4.menu section
+    5.contact section
+    6. footer section
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth; /*    we used this attribute for we make scrolling amazingly  */
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+.pd-y {
+    padding: 64px 0;
+}
+.container, hr {
+    width: 70%;
+    margin: auto;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h1 {
+    font-size: 36px;
+}
+.middle-line {
+    border: 0;
+    border: 1px solid #eee;
+    margin: 20px auto
+    
+}
+.clear {
+    clear: both;
+}
+:root {
+    --black-color : #000;
+    --white-color : #fff;
+    --off-white-color : #f1f1f1;
+    --green-color : #757575;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.mg-15 {
+    margin: 15px 0;
+}
+.center {
+    text-align: center;
+}
+.float {
+    float: left;
+}
+
+
+/* header section */
+.header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.header-content {
+    letter-spacing: 4px;
+    padding: 8px 16px;
+}
+.title-header {
+    color: var(--black-color);
+    margin: 15px ;
+}
+.nav-header {
+    float: right;
+    margin: 15px ;
+}
+.nav-header li {
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: capitalize;
+}
+.nav-header li a {
+    color: var(--black-color);
+}
+
+/* image-section */
+.image {
+    position: relative;
+}
+.image-pecture {
+    max-width: 100%;
+    height: auto;
+}
+.image-desc {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    font-size: 36px;
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+/* about section */
+.about-img {
+    width: 48%;
+}
+.about-img img {
+    width: 100%;
+    opacity: 0.8;
+}
+.about-info {
+    width: 47%;
+    margin-left: 5%;
+}
+.about-title {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.about-desc {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.desc-back {
+    background-color: var(--off-white-color);
+    padding: 5px 10px;
+}
+.about-desc-gray {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--green-color);
+}
+
+/* menu section */
+.menu-content {
+    overflow: hidden;
+}
+.menu-item {
+    width: 48.5%;
+}
+.menu-item.mg {
+    margin-right: 3%;
+}
+.menu-title {
+    font-size: 36px;
+}
+.info-title {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.info-desc {
+    color: var(--green-color);
+}
+.menu-item img {
+    opacity: 0.6;
+}
+/* contact section */
+.contact-title {
+    font-size: 36px;
+}
+.contact-location {
+    color: #607d88;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.contact-form input {
+    border: none;
+    border-bottom: 1px solid var(--black-color);
+    width: 100%;
+    padding: 16px 8px;
+    text-transform: capitalize;
+}
+.form-button {
+    background: var(--off-white-color);
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 16px;
+}
+/* footer section */
+.footer {
+    background: var(--off-white-color);
+}
+.footer-title {
+    padding: 60px 0;
+}
+.footer-link {
+    color: var(--black-color);
+}
